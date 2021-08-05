@@ -15,7 +15,7 @@ window.addEventListener('load', (e) => {
   }
 });
 
-document.querySelector('input').addEventListener('click', (e) => {
+document.querySelector('input').addEventListener('change', (e) => {
   e.preventDefault();
   popup.textContent = 1000 - e.target.value;
   gbused.textContent = e.target.value + ' GB';
