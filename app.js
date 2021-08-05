@@ -1,7 +1,8 @@
 const popup = document.querySelector('p span');
 const gbused = document.querySelector('p strong');
 
-window.addEventListener('load', () => {
+window.addEventListener('load', (e) => {
+  e.preventDefault();
   if (popup.textContent < 100) {
     pop.style.color = 'red';
     gbused.style.color = 'red';
@@ -15,10 +16,7 @@ window.addEventListener('load', () => {
 });
 
 document.querySelector('input').addEventListener('click', (e) => {
-  check(e);
-});
-
-function check(e) {
+  e.preventDefault();
   popup.textContent = 1000 - e.target.value;
   gbused.textContent = e.target.value + ' GB';
   if (1000 - e.target.value < 100) {
@@ -31,4 +29,4 @@ function check(e) {
     popup.style.color = 'hsl(229, 57%, 11%)';
     gbused.style.color = 'white';
   }
-}
+});
