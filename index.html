@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+    <title>Fylo data storage component</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrap">
+        <div class="comp1">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+          <div class="img-wrap-all">
+            <div class="img-wrap">
+              <img src="./images/icon-document.svg" alt="" />
+            </div>
+            <div class="img-wrap">
+              <img src="./images/icon-folder.svg" alt="" />
+            </div>
+            <div class="img-wrap">
+              <img src="./images/icon-upload.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="comp2">
+          <p>You’ve used <strong>815 GB</strong> of your storage</p>
+          <div class="slider">
+            <input
+              type="range"
+              name="range"
+              id=""
+              value="815"
+              min="0"
+              max="1000"
+            />
+            <div class="range-text">
+              <p>0 GB</p>
+              <p>1000 GB</p>
+            </div>
+            <p class="popup"><span>185</span> GB Left</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
